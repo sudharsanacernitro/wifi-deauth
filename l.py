@@ -12,7 +12,7 @@ bssi=[]
 def color(code):
     return "\33[{code}m".format(code=code)
 #subprocess.run(["sudo","airmon-ng","start",i])
-i=input("enter: ")
+i=input("press [enter] to start")
 try:
     subprocess.run(["sudo","airmon-ng","check","kill"])
     subprocess.run(["sudo","airodump-ng","-w","victims","--output-format","csv","wlp0s20f3mon"])
